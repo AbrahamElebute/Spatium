@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Spatium",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "Images/spatium-logo/icon.png"
+  },
+  "permissions": ["tabs"]
+}

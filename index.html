@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Created by Abraham Elebute (AirBlast production) © 2022 All Right Reserved -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/style-mode.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Spatium | Home</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo-container" title="Spatium logo">
+        <img
+          src="Images/spatium-logo/vector/default-monochrome.svg"
+          alt="logo.png"
+          class="logo"
+        />
+      </div>
+      <nav class="nav">
+        <div class="nav-items">
+          <ul>
+            <li title="Dark Mode">
+                <label class="toggle">
+                  <span class="box"></span>
+                  <input type='checkbox'>
+                  <span class="switch"></span>
+                </label>  
+            </li>
+            <li title="Factory Reset"><i class="fa-solid fa-trash-arrow-up iconbeat"></i></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+      <!-- ---------toasts------------ -->
+  <div id="toasts">
+    <div style="display: none;">
+      <div class="toast" id="clonemother">
+        <div class="toast-content">
+        <div class="before"></div>
+        <div class="icon">&#x2714</div>
+        <div class="text"><p><p>Success</p></p><p class="message">link Successfully saved to Space</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="toastsTab">
+    <div  style="display: none">
+      <div class="toast" id="clonemotherTab">
+        <div class="toast-content">
+        <div class="before"></div>
+        <div class="icon">&#x2714</div>
+        <div class="text"><p>Success</p><p class="message">Tab Successfully saved to Space</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------------------->
+    <!-- help & tab -->
+    <div class="help-con" >
+      <div class="help" id="myBtn"  title="Get help on how to use Spatium">Help </div>
+      <div class="tab" id="chrome"  title="Open in New Tab">
+        <img src="Images/icons8-tab-80.png" alt="">
+      </div>
+  </div>
+  <!-- help modal -->
+  <div id="myModal" class="modal">
+    
+    <div class="modal-content">
+      <span class="closex">&times;</span>
+      <div>
+        <h1>Help</h1>
+      <p>Save you <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL" target="_blank">URL</a> and links to space with <strong>Spatium</strong> 🚀😁!!</p>
+      </div>
+  <!-- Created by Abraham Elebute (AirBlast production) © 2022 All Right Reserved -->
+      
+      <ul>
+        <h2>Instruction </h2>
+        <li>Click the toggle button to swith to dark mode</li>
+        <li>Input your link or url in input area</li>
+        <li>To save click the [Save URL] button</li>
+        <li>To save the whole tab  clicking the [Save Tab] button</li>
+        <li>Click on link to open</li>
+        <li>Click the bin icon to delete individually</li>
+        <li>Click the three dot icon to see full link</li>
+        <li>Click on tab icon to open in new page</li>
+        <li>Click setting button to factory reset </li> 
+        <li>Click box icon to mark out </li> 
+      </ul>
+      <br>
+      <p>To save your favorite links click the like icon at the front of your link </p>
+      <h4>subscribe to my <a href="https://www.youtube.com/channel/UC2uixYTJ-ZI2FqqGZUbZ-gw" target="_blank" rel="noopener noreferrer">Youtube!</a></h4>
+    </div>
+  </div>
+  <div class="social">
+      <div>
+    <a href="https://web.facebook.com/abraham.elebute?_rdc=1&_rdr" target="_blank" class="social-btn color-facebook">
+        <div class="icons8-facebook "></div>
+        <p class="order-1 google-font margin-telgram">Facebook</p>
+    </a>
+
+      </div>
+
+      <div>
+        <a href="https://github.com/AbrahamElebute" target="_blank" class="social-btn color-instagram">
+        <div class="icons8-github"></div>
+        <p class="order-1 google-font margin-instagram">Git Hub</p>
+        </a>
+      </div>
+   
+      <div>
+    <a href= "https://wa.me/%2B2348167709844" target="_blank" class="social-btn color-whatsapp">
+
+        <div class="icons8-whatsapp"></div>
+        <p class="order-1 google-font margin-instagram">Whatsapp</p>
+    </a>
+      </div>
+      <div>
+    <a href= "https://twitter.com/AbrahamElebute" target="_blank" class="social-btn color-twitter">
+        <div class="icons8-twitter"></div>
+        <p class="order-1 google-font margin-instagram">Tiwtter</p>
+        </a>
+      </div>
+  </div>
+    <!-- input section -->
+    <div class="input-section">
+        <div class="form__group field">
+          <input type="input" class="form__field" placeholder="Input URL Here" name="name" id='input-el' required />
+          <label for="name" class="form__label">Input URL Here</label>
+        </div>
+        <div class="button-container">
+          <button class="btn button tooltip" id="input-btn" data-tooltip="Click to save your Link">Save URL</button>
+          <button class="btn buttonTab tooltip" id="tab-btn" data-tooltip="Ctrl + Click to save all Tab" title="Save current tab">Save Tab</button>
+
+      </div>
+      
+      </div>
+  <!-- Created by Abraham Elebute (AirBlast production) © 2022 All Right Reserved -->
+      
+    </div>
+    <!-- hr -->
+    <hr style="margin: 0;">
+    <!-- hr -->
+    <section class="fav-sec">
+     
+      </div>
+      <div class="favorite-broad"  title="Your favorite link will be saved here!">
+         <i >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z"/></svg>
+         </i>
+        <h2 > Your favorite links</h2>
+      </div>
+     <ul class="favorite-ul">
+        <!-- <li> <a href="">https://www.google.com/</a> </li>
+        <li> <a href="">https://icons8.com/icons/set/bin</a> </li> -->
+    </ul>
+    </section>
+    
+    <hr >
+
+ <section class="main">
+   
+      <ul id="ul-el">
+        <!-- <li>
+          <div class="tick tooltip" data-tooltip="Click to pick as favorite"></div>
+          <div class="favicon">
+            <img src="Images/spatium-logo/default.png" alt="">
+          </div>
+          <div class="wrap">
+              <div class="date">Dec 22, 2015 at 17:30</div>
+              <a href="https://www.youtube.com/channel/UC2uixYTJ-ZI2FqqGZUbZ-gw" target="_blank"  title="https://www.youtube.com/channel/UC2uixYTJ-ZI2FqqGZUbZ-gw" >https://www.youtube.com/channel/UC2uixYTJ-ZI2FqqGZUbZ-gw</a>
+          </div>
+          <div class="bin">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+            <div class="vertical">
+              <div class="bin-btn">
+                <img src="Images/icons8-bin-64.png" alt="" class="bin-img">
+                </div>
+              <div class="favorite-btn">
+                <img src="Images/thumbs-up-solid.svg" alt="" class="favorite-btn">
+            </div>
+          </div>
+        
+      </li> -->
+      </ul>
+  </section> 
+  
+  <footer>
+      <div class="footer-logo">
+        <img src="Images/spatium-logo/iconBlack.png" alt="">
+      </div>
+      <div class="info">
+        <h5 class="contact">Created by Abraham Elebute © 2022 All Right Reserved</h5>
+        
+      </div>
+      <div class="rest" id="delete-btn" title="Reset">Reset</div>
+  </footer>
+  </div>
+  <!-- script -->
+  <script src="component/index.js"></script>
+  <script src="component/mode.js"></script>
+  <script src="component/modal.js"></script>
+  <script src="component/tab.js"></script>
+  <script src="component/popUp.js"></script>
+  <!-- Created by Abraham Elebute (AirBlast production) © 2022 All Right Reserved -->
+  </body>
+</html>
